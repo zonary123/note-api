@@ -1,4 +1,3 @@
-const colors = require('colors');
 const express = require('express')
 const cors = require('cors')
 const app = express()
@@ -11,19 +10,19 @@ app.use(express.json())
 let notes = [
   {
     id: 1,
-    note: 'Esta es una nota'
+    note: 'One note'
   },
   {
     id: 2,
-    note: 'Esta es otra nota'
+    note: 'Second note'
   },
   {
     id: 3,
-    note: 'Esta es otra nota'
+    note: 'Third note'
   },
   {
     id: 4,
-    note: 'Esta es otra nota'
+    note: 'Fourth note'
   }
 ]
 
@@ -90,5 +89,5 @@ app.use((req, res) => {
 // * SERVER LISTEN
 
 app.listen(port, () => {
-  console.log(`\nEl servidor esta corriendo en el puerto: ${port}`.cyan)
+  console.log(`\nEl servidor esta corriendo en el puerto: ${port}`)
 })
